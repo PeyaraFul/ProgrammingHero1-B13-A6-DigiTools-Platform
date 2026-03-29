@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Resume Builder",
+    "description": "Create professional resumes in minutes with AI suggestions and ATS-friendly templates.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF", "Custom design options"],
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "name": "Cloud Storage 1TB",
+    "description": "Secure cloud storage for your files with fast access and sharing options.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["1TB storage", "End-to-end encryption", "Cross-device sync", "File sharing"],
+    "icon": "☁️"
+  },
+  {
+    "id": 3,
+    "name": "Graphic Design Suite",
+    "description": "All-in-one design software for creating logos, banners, and marketing material.",
+    "price": 199.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Vector graphics", "300+ templates", "Photo editing tools", "Export in multiple formats"],
+    "icon": "🎨"
+  },
+  {
+    "id": 4,
+    "name": "Premium Video Editor",
+    "description": "Edit videos like a pro with AI-powered tools and effects.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["4K export", "AI auto-cut", "Motion graphics", "Sound library"],
+    "icon": "🎬"
+  },
+  {
+    "id": 5,
+    "name": "Online Course Platform",
+    "description": "Host and sell your courses online with integrated analytics and student management.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Unlimited courses", "Student analytics", "Integrated payments", "Certificates"],
+    "icon": "🎓"
+  },
+  {
+    "id": 6,
+    "name": "Team Collaboration Tool",
+    "description": "Manage projects, chat with your team, and track productivity in one platform.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Task management", "Team chat", "Time tracking", "File sharing"],
+    "icon": "👥"
+  },
+  {
+    "id": 7,
+    "name": "AI Chat Assistant",
+    "description": "Automate your customer support with AI-driven responses.",
+    "price": 39.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["24/7 support", "Multi-language", "Customizable scripts", "Analytics dashboard"],
+    "icon": "🤖"
+  },
+  {
+    "id": 8,
+    "name": "Fitness Tracker Pro",
+    "description": "Track your workouts, sleep, and health with detailed insights.",
+    "price": 59.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Heart rate monitoring", "GPS tracking", "Workout analytics", "Mobile app sync"],
+    "icon": "🏃"
+  }
+]
