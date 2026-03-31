@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import CheckIcon from "../products/check-solid.png";
+import { toast } from "react-toastify";
 
 const ToolsCard = ({product,carts, setCarts}) => {
   const [isBuyNow, setIsBuyNow] = useState(false);
@@ -8,7 +9,14 @@ const ToolsCard = ({product,carts, setCarts}) => {
 
   const handleIsBuyNow = () => {
     setIsBuyNow(true) ;
-    setCarts([...carts, product]) ;
+    const exitsItem = carts.find( item => item.id === product.id )
+    if(exitsItem){
+      toast.error('Already added the item!')
+      return ;
+    }
+
+    setCarts([...carts, product, ]) ;
+    toast.success('Added to cart successfully!')
   }
 
 

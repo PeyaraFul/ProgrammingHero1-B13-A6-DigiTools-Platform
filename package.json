@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.2.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-toastify": "^11.0.5",
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
@@ -28,8 +29,8 @@
     "vite": "^8.0.1"
   },
   "overrides": {
-  "@tailwindcss/vite": {
-    "vite": "$vite"
+    "@tailwindcss/vite": {
+      "vite": "$vite"
+    }
   }
-}
 }

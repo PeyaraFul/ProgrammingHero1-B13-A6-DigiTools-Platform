@@ -3,9 +3,9 @@ import { useState } from "react";
 import Banner from "./assets/hero/Banner";
 import Dashboard from "./assets/hero/Dashboard";
 import Navbar from "./assets/hero/Navbar";
-
 import PremiumTools from "./assets/components/PremiumTools";
 import Cart from "./assets/components/Cart";
+import StartStepContainer from "./assets/components/StartSteps/StartStepContainer";
 
 
 const loadProducts = async () => {
@@ -23,7 +23,7 @@ const productPromise = loadProducts();
 function App() {
 let [activeTab, setActiveTab] = useState('products') ;
 const [carts, setCarts] = useState([]) ;
-// console.log(carts) ;
+// console.log(carts.length) ;
 
 
   return (
@@ -45,16 +45,16 @@ const [carts, setCarts] = useState([]) ;
           type="radio"
           name="cart-tab"
           className="tab w-30"
-          aria-label="Cart"
+          aria-label={`Cart (${carts.length})`}
           onClick={() => setActiveTab('cart')}
           
         />
       </div>
 
       {activeTab=== 'products' ? <PremiumTools carts={carts} setCarts={setCarts}  productPromise={productPromise} ></PremiumTools> : null}
-      {activeTab === 'cart' ? <Cart carts={carts}></Cart> : null}
+      {activeTab === 'cart' ? <Cart carts={carts} setCarts={setCarts} ></Cart> : null}
 
-     
+     <StartStepContainer></StartStepContainer>
     </>
   );
 }
