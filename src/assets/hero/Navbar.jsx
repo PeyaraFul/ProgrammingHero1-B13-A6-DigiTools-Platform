@@ -14,7 +14,7 @@ const Navbar = () => {
           </div>
 
           <div className="my-2">
-            <button className="cursor-pointer flex gap-4"> {navLinks.map((navlink) => (<p>{navlink}</p>))}</button>
+            <button className="cursor-pointer flex gap-4" > {navLinks.map((navLink) => (<p key={navLinks.indexOf(navLink)}>{navLink}</p>))}</button>
           </div>
 
           <div className="flex gap-4">

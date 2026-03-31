@@ -8,7 +8,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["100+ templates", "ATS optimization", "Export to PDF", "Custom design options"],
-    "icon": "📝"
+    "icon": "https://a6jsonphotos.netlify.app/assets/Resume%20Builder-BNqZbrN5.webp"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["1TB storage", "End-to-end encryption", "Cross-device sync", "File sharing"],
-    "icon": "☁️"
+    "icon": "https://a6jsonphotos.netlify.app/assets/Cloud%20Storage-j_5qjouf.webp"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Vector graphics", "300+ templates", "Photo editing tools", "Export in multiple formats"],
-    "icon": "🎨"
+    "icon": "https://a6jsonphotos.netlify.app/assets/Graphic%20Design-0-Wgejsh.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["4K export", "AI auto-cut", "Motion graphics", "Sound library"],
-    "icon": "🎬"
+    "icon": "https://a6jsonphotos.netlify.app/assets/video-editor-o73HpBVL.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Unlimited courses", "Student analytics", "Integrated payments", "Certificates"],
-    "icon": "🎓"
+    "icon": "https://a6jsonphotos.netlify.app/assets/Course%20Platform-DV-fRK3r.webp"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Task management", "Team chat", "Time tracking", "File sharing"],
-    "icon": "👥"
+    "icon": "https://a6jsonphotos.netlify.app/assets/Team%20Collaboration-CU1gxweO.png"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["24/7 support", "Multi-language", "Customizable scripts", "Analytics dashboard"],
-    "icon": "🤖"
+    "icon": "https://a6jsonphotos.netlify.app/assets/AI%20Chat%20Assistant-B8CrTZkA.jpg"
   },
   {
     "id": 8,
@@ -85,6 +85,6 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Heart rate monitoring", "GPS tracking", "Workout analytics", "Mobile app sync"],
-    "icon": "🏃"
+    "icon": "https://a6jsonphotos.netlify.app/assets/Fitness%20Tracker-CjI58TsD.webp"
   }
 ]

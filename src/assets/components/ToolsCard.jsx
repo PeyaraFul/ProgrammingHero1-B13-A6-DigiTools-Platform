@@ -1,0 +1,50 @@
+import { useState } from "react";
+
+import CheckIcon from "../products/check-solid.png";
+
+const ToolsCard = ({product,carts, setCarts}) => {
+  const [isBuyNow, setIsBuyNow] = useState(false);
+  // console.log(product);
+
+  const handleIsBuyNow = () => {
+    setIsBuyNow(true) ;
+    setCarts([...carts, product]) ;
+  }
+
+
+  return (
+    <div key={product.id}>
+      <div key={product.id} className="shadow-lg p-4 rounded-2xl relative">
+        <div className="badge badge-soft badge-primary absolute top-4 right-4">
+          {product.tagType}
+        </div>
+
+        <div className="bg-amber-0 w-12 h-12">
+          <img src={product.icon} alt="" />
+        </div>
+
+        <h1 className="font-semibold text-3xl my-1 mt-8">{product.name}</h1>
+        <p>{product.description}</p>
+        <p className="font-semibold text-3xl my-1">
+          {product.price}
+          <span className="font-normal text-sm">/{product.period}</span>
+        </p>
+
+        <div className="my-1">
+          {product?.features?.map((feature, index) => (
+            <p key={index} className="my-0.5 flex gap-1">
+              <img src={CheckIcon} alt="CheckIcon" className="w-5" />
+              {feature}
+            </p>
+          ))}
+        </div>
+
+        <button onClick={handleIsBuyNow} className="btn btn-primary">
+          {isBuyNow ? "Added to Cart" : "Buy Now"}
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default ToolsCard;
