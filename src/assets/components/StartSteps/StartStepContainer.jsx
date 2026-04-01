@@ -6,7 +6,7 @@ import StartCreating from "./StartCreating";
 const StartStepContainer = () => {
   return (
     <>
-      <div className="m-30">
+      <div className="md:mx-30 m-6">
         <h1 className="text-center font-bold text-3xl">
           Get Started in 3 Steps
           </h1>

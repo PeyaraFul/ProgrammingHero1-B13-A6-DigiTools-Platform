@@ -1,5 +1,5 @@
 import React from 'react';
-import DigiTools from './DigiTools';
+// import DigiTools from './DigiTools';
 import Product from './Product';
 import Company from './Company';
 import Resources from './Resources';
@@ -8,8 +8,8 @@ import LInks from './LInks';
 const FooterContainer = () => {
     return (
         <div>
-            <div className='flex gap-10 text-white justify-center text-sm bg-gray-700 p-10 mt-6'>
-                <DigiTools></DigiTools>
+            <div className='flex gap-10 text-white justify-center text-sm bg-gray-700 p-10 mt-6 mx-auto'>
+                {/* <DigiTools></DigiTools> */}
                 <Product></Product>
                 <Company></Company>
                 <Resources></Resources>

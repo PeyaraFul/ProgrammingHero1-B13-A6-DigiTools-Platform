@@ -9,7 +9,7 @@ const Banner = () => {
   const bgGradientColor = "bg-gradient-to-r from-[#9514fa]  to-[#4f39f6]";
   return (
     <div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mx-30 my-15">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mx-6 md:mx-30 my-15">
         <div className=" p-4">
           <div className="bg-purple-200 w-80 rounded-full box-border">
             <span

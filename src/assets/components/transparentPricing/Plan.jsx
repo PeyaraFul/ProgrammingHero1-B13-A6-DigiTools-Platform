@@ -11,7 +11,7 @@ const Plan = ({ planPromise }) => {
     <h1 className="text-center font-bold text-3xl ">Simple, Transparent Pricing</h1>
     <p className="text-center">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-6 mx-30">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-6 mx-6 md:mx-30">
         {plans.map((plan) => (
           <div
             key={plan.id}

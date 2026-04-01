@@ -14,7 +14,7 @@ const PremiumTools = ({ productPromise, carts, setCarts }) => {
     <div>
       
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-30 my-4 ">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:ml-2 md:mx-30 my-4 ">
         {products.map((product) => (
             // <h1 key={product.id}> {product.id} </h1>
 

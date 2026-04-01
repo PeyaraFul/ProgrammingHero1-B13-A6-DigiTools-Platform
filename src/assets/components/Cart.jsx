@@ -30,7 +30,7 @@ const Cart = ({ carts, setCarts }) => {
           </h1>
         </div>
       ) : (
-        <div className="my-10 mx-30 bg-gray-100 p-4 rounded-2xl">
+        <div className="my-10 mx-6 md:mx-30 bg-gray-100 p-4 rounded-2xl">
           {carts.map((cart) => (
             <div
               key={cart.id}

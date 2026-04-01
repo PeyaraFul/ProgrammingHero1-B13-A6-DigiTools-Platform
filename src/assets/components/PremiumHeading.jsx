@@ -3,7 +3,7 @@ import React from 'react';
 const PremiumHeading = () => {
     return (
         <div>
-            <div className="m-30 mt-10">
+            <div className="m-6 md:mx-30 mt-10">
         <h1 className="font-semibold text-4xl text-center">
           Premium Digital Tools
         </h1>
