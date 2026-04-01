@@ -50,7 +50,7 @@ const btnStyle = "bg-gradient-to-r from-[#9514fa]  to-[#4f39f6] rounded-full tex
       <PremiumHeading></PremiumHeading>
 
 
-      <div className="tabs tabs-box justify-center gap-4 -mt-25">
+      <div className="tabs tabs-box bg-white justify-center gap-4 -mt-25">
         <input
           type="radio"
           name="products-tab"
