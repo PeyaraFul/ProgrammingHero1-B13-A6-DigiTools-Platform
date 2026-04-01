@@ -30,7 +30,7 @@ const PremiumTools = ({ productPromise, carts, setCarts }) => {
 
             
 
-          <ToolsCard carts={carts} setCarts={setCarts}  key={product.id} product={product}></ToolsCard>
+    <ToolsCard carts={carts} setCarts={setCarts}  key={product.id} product={product}></ToolsCard>
           // <ToolsCard product={product}></ToolsCard>
         ))}
       </div>
