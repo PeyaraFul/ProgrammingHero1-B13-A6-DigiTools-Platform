@@ -54,7 +54,7 @@ const btnStyle = "bg-gradient-to-r from-[#9514fa]  to-[#4f39f6] rounded-full tex
         <input
           type="radio"
           name="products-tab"
-          className={`tab w-30 ${btnStyle} `}
+          className={`tab w-30 rounded-full ${activeTab === "products" ? btnStyle : ""}`}
           aria-label="Products"
           defaultChecked
           onClick={() => setActiveTab('products')}
@@ -62,7 +62,7 @@ const btnStyle = "bg-gradient-to-r from-[#9514fa]  to-[#4f39f6] rounded-full tex
         <input
           type="radio"
           name="cart-tab"
-          className={`tab w-30 ${btnStyle}`}
+          className={`tab w-30 rounded-full shadow-lg bg-white ${activeTab === "cart" ? btnStyle : ""}`}
           aria-label={`Cart (${carts.length})`}
           onClick={() => setActiveTab('cart')}
           
@@ -75,12 +75,14 @@ const btnStyle = "bg-gradient-to-r from-[#9514fa]  to-[#4f39f6] rounded-full tex
 
       {activeTab === 'cart' ? <Cart carts={carts} setCarts={setCarts} ></Cart> : null}
 
+
+      <div className={activeTab === "cart" ? "hidden" : ""}>
      <StartStepContainer></StartStepContainer>
 
       <Suspense fallback={<h1>LOADING...</h1>} ><Plan planPromise={planPromise} > </Plan></Suspense>
-
+    </div>
       <FooterContainer></FooterContainer>
-
+    
 
     </>
   );

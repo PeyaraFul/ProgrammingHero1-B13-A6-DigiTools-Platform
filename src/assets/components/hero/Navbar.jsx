@@ -9,7 +9,7 @@ const Navbar = ({carts}) => {
 
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm fixed top-0">
+      <div className="navbar bg-gray-100 shadow-sm z-30 fixed top-0">
 
         <div className=" w-full flex justify-around">
           <div className="">
