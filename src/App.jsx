@@ -43,7 +43,7 @@ const btnStyle = "bg-gradient-to-r from-[#9514fa]  to-[#4f39f6] rounded-full tex
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts={carts} ></Navbar>
       <Banner></Banner>
       <Dashboard></Dashboard>
       

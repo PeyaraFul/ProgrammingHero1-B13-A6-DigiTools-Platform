@@ -2,14 +2,14 @@ import React from "react";
 import CartIcon from "../../products/shopping-cart.png";
 
 
-const Navbar = () => {
+const Navbar = ({carts}) => {
   const navLinks = ["Products", "Features", "Pricing", "Testimonials", "FAQ"];
   const textGradientColor = 'bg-gradient-to-r from-[#9514fa]  to-[#4f39f6] bg-clip-text text-transparent' ;
   const bgGradientColor = 'bg-gradient-to-r from-[#9514fa]  to-[#4f39f6]' ;
 
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm fixed top-0">
 
         <div className=" w-full flex justify-around">
           <div className="">
@@ -25,7 +25,7 @@ const Navbar = () => {
               <button className="cursor-pointer">
                 <div className=" flex">
                   <img src={CartIcon} alt="shopping-cart-icon" />
-                  <span className=" -mx-0.7 -my-3 text-red-500 ">0</span>
+                  <span className=" -mx-0.7 -my-3 text-red-500 "> {carts.length}</span>
                 </div>
              
               </button>
