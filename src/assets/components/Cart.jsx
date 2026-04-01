@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 
 
 const Cart = ({carts, setCarts}) => {
+    const btnStyle = "bg-gradient-to-r from-[#9514fa]  to-[#4f39f6] rounded-full text-white"
  const totalAmount = carts.reduce((sum, item) =>  sum + item.price, 0) ;
     // console.log(carts)
 
@@ -41,7 +42,7 @@ const Cart = ({carts, setCarts}) => {
                     </div>
                     
                   </div>
-                  <button onClick={() => handleRemove(cart)} className="btn btn-outline btn-secondary"> Remove</button>
+                  <button onClick={() => handleRemove(cart)} className="btn btn-outline "> Remove</button>
                   
                     </div>
 

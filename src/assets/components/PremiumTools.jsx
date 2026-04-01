@@ -12,17 +12,9 @@ const PremiumTools = ({ productPromise, carts, setCarts }) => {
   return (
     
     <div>
-      <div className="m-40 mt-10">
-        <h1 className="font-semibold text-4xl text-center">
-          Premium Digital Tools
-        </h1>
-        <p className="text-center mb-8">
-          Choose from our curated collection of premium digital <br /> products
-          designed to boost your productivity and creativity.
-        </p>
-      </div>
+      
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-30 my-4 ">
         {products.map((product) => (
             // <h1 key={product.id}> {product.id} </h1>
 

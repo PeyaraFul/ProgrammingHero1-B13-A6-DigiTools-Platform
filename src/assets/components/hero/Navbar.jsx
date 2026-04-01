@@ -1,8 +1,11 @@
 import React from "react";
-import CartIcon from "../products/shopping-cart.png";
+import CartIcon from "../../products/shopping-cart.png";
+
 
 const Navbar = () => {
   const navLinks = ["Products", "Features", "Pricing", "Testimonials", "FAQ"];
+  const textGradientColor = 'bg-gradient-to-r from-[#9514fa]  to-[#4f39f6] bg-clip-text text-transparent' ;
+  const bgGradientColor = 'bg-gradient-to-r from-[#9514fa]  to-[#4f39f6]' ;
 
   return (
     <div>
@@ -10,10 +13,10 @@ const Navbar = () => {
 
         <div className=" w-full flex justify-around">
           <div className="">
-            <span className="font-bold text-2xl">DigiTools</span>
+            <span className={`font-bold text-2xl ${textGradientColor}`}>DigiTools</span>
           </div>
 
-          <div className="my-2">
+          <div className="my-2 sm:block hidden">
             <button className="cursor-pointer flex gap-4" > {navLinks.map((navLink) => (<p key={navLinks.indexOf(navLink)}>{navLink}</p>))}</button>
           </div>
 
@@ -28,7 +31,8 @@ const Navbar = () => {
               </button>
               <button className="cursor-pointer"> Login</button>
             
-              <button className="btn btn-primary">Get Stared</button>
+        <button className={`btn
+           ${bgGradientColor} rounded-full text-white`}>Get Stared</button>
             
           </div>
         </div>

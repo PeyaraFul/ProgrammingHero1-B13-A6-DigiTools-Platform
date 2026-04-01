@@ -20,6 +20,7 @@
     "billing_cycle": "Month",
     "target_audience": "Best for professionals",
     "status": "Most Popular",
+    "textColor": "text-white",
     "bg": "bg-linear-to-r from-[#4f39f6] to-[#9514fa]",
     "features": [
       "Access to all premium tools",

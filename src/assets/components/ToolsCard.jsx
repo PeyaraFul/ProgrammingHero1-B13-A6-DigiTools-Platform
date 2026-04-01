@@ -4,6 +4,7 @@ import CheckIcon from "../products/check-solid.png";
 import { toast } from "react-toastify";
 
 const ToolsCard = ({product,carts, setCarts}) => {
+  const btnStyle = "bg-gradient-to-r from-[#9514fa]  to-[#4f39f6] rounded-full text-white"
   const [isBuyNow, setIsBuyNow] = useState(false);
   // console.log(product);
 
@@ -21,8 +22,8 @@ const ToolsCard = ({product,carts, setCarts}) => {
 
 
   return (
-    <div key={product.id}>
-      <div key={product.id} className="shadow-lg p-4 rounded-2xl relative">
+    <div key={product.id} className="">
+      <div key={product.id} className="grid -col shadow-lg p-4 rounded-2xl relative">
         <div className="badge badge-soft badge-primary absolute top-4 right-4">
           {product.tagType}
         </div>
@@ -31,7 +32,7 @@ const ToolsCard = ({product,carts, setCarts}) => {
           <img src={product.icon} alt="" />
         </div>
 
-        <h1 className="font-semibold text-3xl my-1 mt-8">{product.name}</h1>
+        <h1 className="font-bold text-xl my-1 mt-8">{product.name}</h1>
         <p>{product.description}</p>
         <p className="font-semibold text-3xl my-1">
           {product.price}
@@ -47,7 +48,7 @@ const ToolsCard = ({product,carts, setCarts}) => {
           ))}
         </div>
 
-        <button onClick={handleIsBuyNow} className="btn btn-primary">
+        <button onClick={handleIsBuyNow} className={`btn ${btnStyle} w-full mt-auto`}>
           {isBuyNow ? "Added to Cart" : "Buy Now"}
         </button>
       </div>

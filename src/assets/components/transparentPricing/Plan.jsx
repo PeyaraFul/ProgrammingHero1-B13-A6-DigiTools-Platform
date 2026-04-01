@@ -2,16 +2,20 @@ import { use } from "react";
 import CheckIcon from "../../products/check-solid.png";
 const Plan = ({ planPromise }) => {
   const plans = use(planPromise);
+  const btnStyle = "bg-gradient-to-r from-[#9514fa]  to-[#4f39f6] rounded-full text-white"
 
   console.log(plans);
 
   return (
     <>
-      <div className="flex gap-12 justify-center">
+    <h1 className="text-center font-bold text-3xl ">Simple, Transparent Pricing</h1>
+    <p className="text-center">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-6 mx-30">
         {plans.map((plan) => (
           <div
             key={plan.id}
-            className={`p-4 rounded-2xl border border-gray-200 ${plan.bg}`}
+            className={`p-4 rounded-2xl border border-gray-200 ${plan.bg} ${plan.textColor}`}
           >
             <h1 className="text-2xl font-semibold">{plan.plan_name}</h1>
             <p> {plan.target_audience} </p>
@@ -28,7 +32,7 @@ const Plan = ({ planPromise }) => {
                 </p>
               ))}
             </div>
-            <button className="btn btn-primary mt-auto bg-linear-to-r from-[#4f39f6] to-[#9514fa]"> {plan.call_to_action} </button>
+            <button className={`btn ${btnStyle} w-full`} > {plan.call_to_action} </button>
           </div>
         ))}
       </div>
